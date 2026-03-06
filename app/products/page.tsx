@@ -44,12 +44,12 @@ export default function Products() {
             >
               Accueil
             </Link>
-            <Link
+            {/* <Link
               href="/produits"
               className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500"
             >
               Nos Produits
-            </Link>
+            </Link> */}
             <Link
               href="/service-traiteur"
               className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500 "

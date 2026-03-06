@@ -67,7 +67,7 @@ const traiteurImages = [
 
 export default function ServiceTraiteurPage() {
   return (
-    <section className="min-h-screen py-8 px-4 md:px-12 lg:px-20 bg-stone-100">
+    <section className="min-h-screen py-8 px-4 md:px-12 lg:px-20 bg-sky-50">
       <div className="max-w-7xl mx-auto">
         {/* Header with logo and nav - consistent with products page */}
         <div className="flex justify-between items-center max-w-7xl mx-auto pb-8 md:pb-12">
@@ -93,12 +93,12 @@ export default function ServiceTraiteurPage() {
             >
               Nos Produits
             </Link>
-            <Link
+            {/* <Link
               href="/service-traiteur"
               className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500"
             >
               Service Traiteur
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500"

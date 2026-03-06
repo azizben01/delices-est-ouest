@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="mx-4 sm:mx-6 md:mx-8 flex items-center justify-between max-w-7xl md:mx-auto md:px-4">
           {/* Logo */}
           <Image
-            src="/images/logo2bg.png"
+            src="/Images/logo2bg.png"
             height={150}
             width={150}
             alt="Delices"
@@ -26,7 +26,7 @@ export default function Hero() {
               Accueil
             </Link>
             <Link
-              href="/produits"
+              href="/products"
               className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500"
             >
               Nos Produits

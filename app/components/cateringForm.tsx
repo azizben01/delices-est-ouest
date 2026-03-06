@@ -175,8 +175,8 @@ Demande envoyée depuis le site Délice Est Out
                 onClick={() => handlePlatToggle(plat.id)}
                 className={`px-4 py-2 text-sm font-delius border-b-2 transition-all ${
                   formData.selectedPlats.includes(plat.id)
-                    ? "border-teal-800 text-teal-700 bg-teal-50/30"
-                    : "border-teal-700 text-teal-800 hover:border-teal-400"
+                    ? "border-teal-500 text-teal-700 bg-teal-100"
+                    : "border-stone-200 text-stone-600 hover:border-stone-400"
                 }`}
               >
                 {plat.label}
