@@ -1,13 +1,18 @@
+ "use client";
+
 // app/components/Hero.tsx
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Hero() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <>
       {/* Top White Bar with Logo and Navigation */}
       <div className="bg-sky-50 py-3 top-0 z-20">
-        <div className="mx-4 sm:mx-6 md:mx-8 flex items-center justify-between max-w-7xl md:mx-auto md:px-4">
+        <div className="mx-4 sm:mx-6 md:mx-8 flex items-center justify-between max-w-7xl md:mx-auto md:px-4 relative">
           {/* Logo */}
           <Image
             src="/Images/logo2bg.png"
@@ -45,8 +50,13 @@ export default function Hero() {
             </Link>
           </nav>
 
-          {/* Mobile menu button - Simple for now */}
-          <button className="md:hidden text-gray-700">
+          {/* Mobile menu button */}
+          <button
+            type="button"
+            className="md:hidden text-gray-700"
+            aria-label="Ouvrir le menu"
+            onClick={() => setMobileOpen((v) => !v)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -55,13 +65,55 @@ export default function Hero() {
               stroke="currentColor"
               className="w-6 h-6"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
+              {mobileOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              )}
             </svg>
           </button>
+
+          {/* Mobile dropdown menu */}
+          {mobileOpen && (
+            <div className="absolute left-0 right-0 top-full mt-2 md:hidden bg-white shadow-lg rounded-lg py-3 px-4 space-y-2 text-teal-700 font-delius">
+              <Link
+                href="/"
+                className="block py-1 border-b border-sky-100 last:border-b-0"
+                onClick={() => setMobileOpen(false)}
+              >
+                Accueil
+              </Link>
+              <Link
+                href="/products"
+                className="block py-1 border-b border-sky-100 last:border-b-0"
+                onClick={() => setMobileOpen(false)}
+              >
+                Nos Produits
+              </Link>
+              <Link
+                href="/service-traiteur"
+                className="block py-1 border-b border-sky-100 last:border-b-0"
+                onClick={() => setMobileOpen(false)}
+              >
+                Service Traiteur
+              </Link>
+              <Link
+                href="/contact"
+                className="block py-1"
+                onClick={() => setMobileOpen(false)}
+              >
+                Contact
+              </Link>
+            </div>
+          )}
         </div>
       </div>
 
