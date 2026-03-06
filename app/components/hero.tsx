@@ -1,9 +1,11 @@
- "use client";
+"use client";
 
 // app/components/Hero.tsx
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { TiThMenu } from "react-icons/ti";
+import { RxCross1 } from "react-icons/rx";
 
 export default function Hero() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -63,21 +65,9 @@ export default function Hero() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-8 h-8"
             >
-              {mobileOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              )}
+              {mobileOpen ? <RxCross1 /> : <TiThMenu />}
             </svg>
           </button>
 

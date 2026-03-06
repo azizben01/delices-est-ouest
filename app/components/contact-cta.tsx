@@ -1,3 +1,4 @@
+"use client";
 import { BsTiktok } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 const TIKTOK_URL = "https://www.tiktok.com/@delices"; // e.g. https://www.tiktok.com/@yourusername
