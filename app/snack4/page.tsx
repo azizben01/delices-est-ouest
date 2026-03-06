@@ -1,7 +1,10 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import WhatsAppOrder from "../components/whatsapp-order";
-
+import { TiThMenu } from "react-icons/ti";
+import { RxCross1 } from "react-icons/rx";
+import { useState } from "react";
 const images = [
   { src: "/Images/image11.jpeg", alt: "Gari", colSpan: 2, rowSpan: 1 },
   { src: "/Images/image12.jpeg", alt: "Gari", colSpan: 2, rowSpan: 1 },
@@ -10,23 +13,25 @@ const images = [
 ];
 
 export default function Snack4Page() {
+  const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <section className="min-h-screen py-8 px-4 md:px-12 lg:px-20 bg-sky-50">
       <div className="max-w-8xl mx-auto">
-        <div className="flex justify-between items-center max-w-7xl mx-auto pb-8 md:pb-12">
-          <Link href="/">
-            <Image
-              src="/Images/logo2bg.png"
-              height={150}
-              width={150}
-              alt="Délices"
-              className="object-contain w-auto h-12 sm:h-16 md:h-20"
-            />
-          </Link>
-          <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-teal-700 text-sm lg:text-base font-delius">
+        <div className="mx-4 sm:mx-6 md:mx-8 flex items-center justify-between max-w-7xl md:mx-auto md:px-4 relative">
+          {/* Logo */}
+          <Image
+            src="/Images/logo2bg.png"
+            height={150}
+            width={150}
+            alt="Delices"
+            className="object-contain w-auto h-12 sm:h-16 md:h-20"
+          />
+
+          {/* Navigation - Right side - Hidden on mobile, visible on desktop */}
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 text-teal-700 text-sm lg:text-base font-delius">
             <Link
               href="/"
-              className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500"
+              className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500 "
             >
               Accueil
             </Link>
@@ -38,20 +43,73 @@ export default function Snack4Page() {
             </Link>
             <Link
               href="/service-traiteur"
-              className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500"
+              className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500 "
             >
               Service Traiteur
             </Link>
             <Link
               href="/contact"
-              className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500"
+              className="hover:text-teal-500 transition-colors border-b-2 border-b-teal-500 "
             >
               Contact
             </Link>
           </nav>
+
+          {/* Mobile menu button */}
+          <button
+            type="button"
+            className="md:hidden text-gray-700"
+            aria-label="Ouvrir le menu"
+            onClick={() => setMobileOpen((v) => !v)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-8 h-8"
+            >
+              {mobileOpen ? <RxCross1 /> : <TiThMenu />}
+            </svg>
+          </button>
+
+          {/* Mobile dropdown menu */}
+          {mobileOpen && (
+            <div className="absolute left-0 right-0 top-full mt-2 md:hidden bg-white shadow-lg rounded-lg py-3 px-4 space-y-2 text-teal-700 font-delius">
+              <Link
+                href="/"
+                className="block py-1 border-b border-sky-100 last:border-b-0"
+                onClick={() => setMobileOpen(false)}
+              >
+                Accueil
+              </Link>
+              {/* <Link
+                href="/products"
+                className="block py-1 border-b border-sky-100 last:border-b-0"
+                onClick={() => setMobileOpen(false)}
+              >
+                Nos Produits
+              </Link> */}
+              <Link
+                href="/service-traiteur"
+                className="block py-1 border-b border-sky-100 last:border-b-0"
+                onClick={() => setMobileOpen(false)}
+              >
+                Service Traiteur
+              </Link>
+              <Link
+                href="/contact"
+                className="block py-1"
+                onClick={() => setMobileOpen(false)}
+              >
+                Contact
+              </Link>
+            </div>
+          )}
         </div>
 
-        <h1 className="text-2xl md:text-3xl font-delius text-teal-800 text-center mb-2">
+        <h1 className="text-2xl py-10 md:text-3xl font-delius text-teal-800 text-center mb-2">
           Gari
         </h1>
         <p className="text-center text-teal-700 font-delius text-sm md:text-base max-w-xl mx-auto mb-10">
