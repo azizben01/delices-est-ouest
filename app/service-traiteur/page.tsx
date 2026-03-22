@@ -5,65 +5,55 @@ import CateringForm from "../components/cateringForm";
 import { TiThMenu } from "react-icons/ti";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
+import VideoShowcase from "../components/VideoShowcase";
+
 const traiteurImages = [
   {
-    src: "/Images/image1.jpeg",
+    src: "/Images/service-traiteur/image1.jpeg",
     alt: "Présentation traiteur",
     colSpan: 2,
     rowSpan: 1,
   },
   {
-    src: "/Images/image2.jpeg",
+    src: "/Images/service-traiteur/image2.jpeg",
     alt: "Pâtisseries et accompagnements",
     colSpan: 2,
-    rowSpan: 1,
+    rowSpan: 2,
   },
   {
-    src: "/Images/image3.jpeg",
+    src: "/Images/service-traiteur/image3.jpeg",
     alt: "Charcuterie et fruits",
     colSpan: 2,
     rowSpan: 1,
   },
   {
-    src: "/Images/image4.jpeg",
+    src: "/Images/service-traiteur/image4.jpeg",
     alt: "Desserts et créations",
     colSpan: 3,
     rowSpan: 2,
   },
   {
-    src: "/Images/image5.jpeg",
+    src: "/Images/service-traiteur/image5.jpeg",
     alt: "Assortiment gourmand",
     colSpan: 3,
     rowSpan: 2,
   },
   {
-    src: "/Images/image6.jpeg",
+    src: "/Images/service-traiteur/image6.jpeg",
     alt: "Buffet traiteur",
     colSpan: 2,
-    rowSpan: 1,
-  },
-  {
-    src: "/Images/image7.jpeg",
-    alt: "Présentation événement",
-    colSpan: 2,
-    rowSpan: 1,
-  },
-  {
-    src: "/Images/image8.jpeg",
-    alt: "Spécialités maison",
-    colSpan: 2,
-    rowSpan: 1,
-  },
-  {
-    src: "/Images/image9.jpeg",
-    alt: "Service traiteur",
-    colSpan: 3,
     rowSpan: 2,
   },
   {
-    src: "/Images/image10.jpeg",
-    alt: "Tarte et douceurs",
-    colSpan: 3,
+    src: "/Images/service-traiteur/image7.jpeg",
+    alt: "Présentation événement",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/service-traiteur/image8.jpeg",
+    alt: "Spécialités maison",
+    colSpan: 2,
     rowSpan: 2,
   },
 ];
@@ -194,6 +184,9 @@ export default function ServiceTraiteurPage() {
             </div>
           ))}
         </div>
+
+        <VideoShowcase />
+
         <CateringForm />
       </div>
     </section>

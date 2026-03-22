@@ -78,13 +78,6 @@ export default function Products() {
               >
                 Accueil
               </Link>
-              {/* <Link
-                href="/products"
-                className="block py-1 border-b border-sky-100 last:border-b-0"
-                onClick={() => setMobileOpen(false)}
-              >
-                Nos Produits
-              </Link> */}
               <Link
                 href="/service-traiteur"
                 className="block py-1 border-b border-sky-100 last:border-b-0"
@@ -115,24 +108,24 @@ export default function Products() {
             className="relative h-64 rounded-lg overflow-hidden group"
           >
             <img
-              src="/Images/arachidebottle.jpg"
+              src="/Images/arachid/bg5.jpg"
               alt="Arachides fraîches"
               className="w-full h-full object-cover"
             />
 
             {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all"></div>
 
             {/* Text */}
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-2xl font-bold text-center">
-                Arachides fraîches
+                Nos Arachides
               </h3>
             </div>
           </Link>
 
           {/* Arachides grillées */}
-          <Link
+          {/* <Link
             href="/snack2"
             className="relative h-64 rounded-lg overflow-hidden group"
           >
@@ -142,14 +135,14 @@ export default function Products() {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all"></div>
 
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-2xl font-bold text-center">
                 Arachides grillées
               </h3>
             </div>
-          </Link>
+          </Link> */}
 
           {/* Croquettes */}
           <Link
@@ -162,7 +155,7 @@ export default function Products() {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all"></div>
 
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-2xl font-bold text-center">
@@ -176,19 +169,19 @@ export default function Products() {
           >
             <img
               src="/Images/image2.jpeg"
-              alt="Pate d'arachide"
+              alt="Beurre d'arachide"
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all"></div>
 
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-2xl font-bold text-center">
-                Pate d'arachide
+                Beurre d'arachide
               </h3>
             </div>
           </Link>
-          <Link
+          {/* <Link
             href="/snack4"
             className="relative h-64 rounded-lg overflow-hidden group"
           >
@@ -198,14 +191,14 @@ export default function Products() {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all"></div>
 
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-2xl font-bold text-center">
                 Gari
               </h3>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

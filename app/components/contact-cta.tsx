@@ -1,7 +1,7 @@
 "use client";
 import { BsTiktok } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
-const TIKTOK_URL = "https://www.tiktok.com/@delices"; // e.g. https://www.tiktok.com/@yourusername
+const TIKTOK_URL = "https://www.tiktok.com/@delices.estouest"; // e.g. https://www.tiktok.com/@yourusername
 const PHONE_NUMBER = "+25769641051"; // E.164 format for tel: link
 const WHATSAPP_NUMBER = "+25769641051"; // Replace with your business number
 

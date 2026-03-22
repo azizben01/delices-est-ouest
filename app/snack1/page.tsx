@@ -1,22 +1,63 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import WhatsAppOrder from "../components/whatsapp-order";
+import ArachideForm from "../components/arachidForm";
 import { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { TiThMenu } from "react-icons/ti";
 
 const images = [
   {
-    src: "/Images/arachidebottle.jpg",
+    src: "/Images/arachid/image1.jpeg",
     alt: "Arachides fraîches",
     colSpan: 2,
-    rowSpan: 1,
+    rowSpan: 2,
   },
-  { src: "/Images/image5.jpeg", alt: "Arachides", colSpan: 2, rowSpan: 1 },
-  { src: "/Images/image1.jpeg", alt: "Présentation", colSpan: 2, rowSpan: 2 },
   {
-    src: "/Images/image2.jpeg",
+    src: "/Images/arachid/image2.jpeg",
+    alt: "Arachides",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/arachid/image3.jpeg",
+    alt: "Présentation",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/arachid/image4.jpeg",
+    alt: "Arachides fraîches",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/arachid/image5.jpeg",
+    alt: "Arachides fraîches",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/arachid/image6.jpeg",
+    alt: "Arachides fraîches",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/arachid/image7.jpeg",
+    alt: "Arachides fraîches",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+
+  {
+    src: "/Images/arachid/image9.jpeg",
+    alt: "Arachides fraîches",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/arachid/image10.jpeg",
     alt: "Arachides fraîches",
     colSpan: 2,
     rowSpan: 2,
@@ -132,7 +173,7 @@ export default function Snack1Page() {
           {images.map((item, i) => (
             <div
               key={i}
-              className="relative overflow-hidden rounded-lg bg-stone-300 min-h-[140px] md:min-h-0"
+              className="relative overflow-hidden rounded-lg bg-stone-300 min-h-[180px] md:min-h-0"
               style={{
                 gridColumn: `span ${item.colSpan}`,
                 gridRow: `span ${item.rowSpan}`,
@@ -149,10 +190,8 @@ export default function Snack1Page() {
           ))}
         </div>
 
-        <WhatsAppOrder
+        <ArachideForm
           productName="Arachides fraîches"
-          unitPrice={1500}
-          priceLabel="1500 FCFA"
         />
       </div>
     </section>

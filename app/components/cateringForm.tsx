@@ -18,11 +18,16 @@ export default function CateringForm() {
     { id: "riz", label: "Riz" },
     { id: "salade", label: "Salade" },
     { id: "foutou", label: "Foutou" },
-    { id: "gari", label: "Gari" },
     { id: "allocos", label: "Allocos" },
     { id: "attiéké", label: "Attiéké" },
     { id: "poulet", label: "Poulet braisé" },
+    { id: "poulet1", label: "Poulet grillé" },
     { id: "poisson", label: "Poisson frit" },
+    { id: "poisson1", label: "Poisson braisé" },
+    { id: "poisson2", label: "Poisson grillé" },
+    { id: "viande", label: "Viande/brochette" },
+    { id: "gari", label: "gari" },
+    { id: "tapioca", label: "tapioca" },
   ];
 
   const handlePlatToggle = (platId: string) => {
