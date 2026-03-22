@@ -1,6 +1,8 @@
 "use client";
 import { BsTiktok } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+const FacebookUrl = "https://www.facebook.com/delices.estouest";
 const TIKTOK_URL = "https://www.tiktok.com/@delices.estouest"; // e.g. https://www.tiktok.com/@yourusername
 const PHONE_NUMBER = "+25769641051"; // E.164 format for tel: link
 const WHATSAPP_NUMBER = "+25769641051"; // Replace with your business number
@@ -41,6 +43,19 @@ export default function ContactCta() {
               className="w-5 h-5 sm:w-6 sm:h-6 shrink-0"
             />
             <span>Whatsapp</span>
+          </a>
+
+          <a
+            href={FacebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 sm:gap-3 px-5 py-3.5 sm:px-6 sm:py-2 rounded-xl text-[#9e196a] font-bold font-garamond text-sm sm:text-base border b-[#9e196a] hover:text-white hover:bg-[#9e196a] transition-colors shadow-md hover:shadow-lg min-h-[48px]"
+          >
+            <FaFacebook
+              href={FacebookUrl}
+              className="w-5 h-5 sm:w-6 sm:h-6 shrink-0"
+            />
+            <span>Facebook</span>
           </a>
         </div>
         <p className="text-center text-teal-900 text-xl sm:text-xl mt-4 font-delius">
