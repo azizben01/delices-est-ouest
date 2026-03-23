@@ -17,9 +17,9 @@ export default function GariForm({ productName }: Props) {
       {
         id: "GariGari",
         label: "Gari",
-        unitPrice: 25000,
+        unitPrice: 15000,
       },
-      { id: "noixCajou", label: "Noix de Cajou", unitPrice: 25000 },
+      { id: "noixCajou", label: "Noix de Cajou", unitPrice: 30000 },
     ],
     [],
   );

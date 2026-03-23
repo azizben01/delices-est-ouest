@@ -157,7 +157,7 @@ export default function Snack4Page() {
             </div>
           ))}
         </div>
-        <GariForm productName="" />
+        <GariForm productName="Gari" />
         {/* <WhatsAppOrder
           productName="Gari"
           unitPrice={1200}

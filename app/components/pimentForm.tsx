@@ -17,7 +17,7 @@ export default function PimentForm({ productName }: Props) {
       {
         id: "piment",
         label: "Piment de table grillé et assaisonné",
-        unitPrice: 25000,
+        unitPrice: 20000,
       },
       { id: "rachideBeurre", label: "Beurre d'arachide", unitPrice: 25000 },
     ],
