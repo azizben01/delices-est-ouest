@@ -5,11 +5,32 @@ import WhatsAppOrder from "../components/whatsapp-order";
 import { TiThMenu } from "react-icons/ti";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
+import GariForm from "../components/gariForm";
 const images = [
-  { src: "/Images/image11.jpeg", alt: "Gari", colSpan: 2, rowSpan: 1 },
-  { src: "/Images/image12.jpeg", alt: "Gari", colSpan: 2, rowSpan: 1 },
-  { src: "/Images/image13.jpeg", alt: "Présentation", colSpan: 2, rowSpan: 2 },
-  { src: "/Images/image14.jpeg", alt: "Gari", colSpan: 2, rowSpan: 2 },
+  {
+    src: "/Images/cajoux et gari/gari1.jpeg",
+    alt: "Gari",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/cajoux et gari/gari2.jpeg",
+    alt: "Gari",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/cajoux et gari/noixcajoux.jpeg",
+    alt: "Présentation",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/cajoux et gari/noixcajou1.jpeg",
+    alt: "Gari",
+    colSpan: 2,
+    rowSpan: 2,
+  },
 ];
 
 export default function Snack4Page() {
@@ -136,12 +157,12 @@ export default function Snack4Page() {
             </div>
           ))}
         </div>
-
-        <WhatsAppOrder
+        <GariForm productName="" />
+        {/* <WhatsAppOrder
           productName="Gari"
           unitPrice={1200}
           priceLabel="1200 FCFA"
-        />
+        /> */}
       </div>
     </section>
   );

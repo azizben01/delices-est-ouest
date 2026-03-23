@@ -177,16 +177,16 @@ export default function Products() {
 
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-2xl font-bold text-center">
-                Beurre d'arachide
+                Beurre d'arachide et Piment de table
               </h3>
             </div>
           </Link>
-          {/* <Link
+          <Link
             href="/snack4"
             className="relative h-64 rounded-lg overflow-hidden group"
           >
             <img
-              src="/Images/image11.jpeg"
+              src="/Images/cajoux et gari/noixcajoux.jpeg"
               alt="Gari"
               className="w-full h-full object-cover"
             />
@@ -195,10 +195,10 @@ export default function Products() {
 
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-2xl font-bold text-center">
-                Gari
+                Noix de Cajou et Gari
               </h3>
             </div>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </section>

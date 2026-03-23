@@ -5,21 +5,20 @@ import WhatsAppOrder from "../components/whatsapp-order";
 import { TiThMenu } from "react-icons/ti";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
+import PimentForm from "../components/pimentForm";
 const images = [
   {
-    src: "/Images/arachidebottle.jpg",
+    src: "/Images/cajoux et gari/piment.jpeg",
+    alt: "Présentation",
+    colSpan: 2,
+    rowSpan: 2,
+  },
+  {
+    src: "/Images/image1.jpeg",
     alt: "Pâte d'arachide",
     colSpan: 2,
     rowSpan: 2,
   },
-  { src: "/Images/image4.jpeg", alt: "Présentation", colSpan: 2, rowSpan: 1 },
-  {
-    src: "/Images/image9.jpeg",
-    alt: "Pâte d'arachide",
-    colSpan: 2,
-    rowSpan: 1,
-  },
-  { src: "/Images/image10.jpeg", alt: "Créations", colSpan: 2, rowSpan: 1 },
 ];
 
 export default function Snack3Page() {
@@ -143,16 +142,18 @@ export default function Snack3Page() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"
+                unoptimized
               />
             </div>
           ))}
         </div>
+        <PimentForm productName="" />
 
-        <WhatsAppOrder
+        {/* <WhatsAppOrder
           productName="Pâte d'arachide"
           unitPrice={2500}
           priceLabel="2500 FCFA"
-        />
+        /> */}
       </div>
     </section>
   );
