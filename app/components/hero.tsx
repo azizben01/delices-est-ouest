@@ -110,13 +110,12 @@ export default function Hero() {
       {/* Hero Image Section - Responsive */}
       <div
         className="relative w-full overflow-hidden bg-cover bg-center aspect-[4/3] min-h-[280px] sm:aspect-video sm:min-h-[320px] md:aspect-[21/7] md:min-h-[380px]"
-        style={{ backgroundImage: "url('/Images/bg6.jpg')" }}
+        style={{ backgroundImage: "url('/Images/new/pic1.jpg')" }}
       >
         {/* Gray overlay */}
         <div className="absolute inset-0 bg-gray-950/15 backdrop-blur-[1px]" />
-
         {/* Text - responsive size and spacing */}
-        <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 md:bottom-10 md:left-10 lg:bottom-16 lg:left-12 xl:bottom-20 xl:left-16 text-white z-10 max-w-2xl">
+        <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 md:bottom-10 md:left-10 lg:bottom-16 lg:left-12 xl:bottom-20 xl:left-16 text-wht text-gray950 z-10 max-w-2xl">
           <p className="text-[10px] min-[380px]:text-xs sm:text-sm md:text-base tracking-[0.2em] sm:tracking-[0.3em] mb-1 sm:mb-2 font-light opacity-95">
             GASTRONOMIE AFRICAINE
           </p>
@@ -133,7 +132,6 @@ export default function Hero() {
             Découvrir nos Produits →
           </Link>
         </div>
-
         {/* Gradient for text legibility */}
         <div className="absolute bottom-0 left-0 right-0 h-20 sm:h-24 md:h-28 lg:h-32 bg-gradient-to-t from-black/60 to-transparent" />
       </div>
